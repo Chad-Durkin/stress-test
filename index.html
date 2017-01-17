@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <meta charset="utf-8">
+    <title>Stress Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to the stress test!</h1>
+      </div>
+
+      <form id="stress-test-questions">
+        <div class="form-group">
+          <input type="checkbox" name="symptoms" value="1">Sleep loss<br>
+          <input type="checkbox" name="symptoms" value="1">Mood Swings<br>
+          <input type="checkbox" name="symptoms" value="1">Loss of apetite<br>
+          <input type="checkbox" name="symptoms" value="1">Fatigue<br>
+          <input type="checkbox" name="symptoms" value="1">Difficulty focusing<br>
+          <input type="checkbox" name="symptoms" value="1">Weight fluctuation<br>
+          <input type="checkbox" name="coping" value="1">Irregular meal times<br>
+          <input type="checkbox" name="coping" value="-3">Exercising regularly<br>
+          <input type="checkbox" name="coping" value="1">Frequent napping<br>
+          <input type="checkbox" name="coping" value="1">Excesive ranting<br>
+          <input type="checkbox" name="coping" value="-2">Seeing a therapist<br>
+          <input type="checkbox" name="life-style" value="1">Long commutes<br>
+          <input type="checkbox" name="life-style" value="1">Irregular hours<br>
+          <input type="checkbox" name="life-style" value="1">Stressful work environment<br>
+          <input type="checkbox" name="life-style" value="1">Highstrung homelife<br>
+          <input type="checkbox" name="life-style" value="1">Messy habits<br>
+        </div>
+        <button type="submit">Check your stress</button>
+      </form>
+
+      <div id="results">
+        <p><b>The higher the number the more stress you have in your life, if you get a number close to 0, or below 0 then you have a healthier life.</b></p>
+        <p><b>Here are your results: </b></p>
+        <p>Your stress symptoms results is: <span id="symptoms-result"></span>. Your coping results is: <span id="coping-result"></span>, and your lifestyle contribution result is: <span id="life-style-result"></span>.</p>
+        <p>Your final result, adding all three of your results together, comes out to <span id="final-result"></span>.</p>
+      </div>
+    </div>
+  </body>
+</html>
